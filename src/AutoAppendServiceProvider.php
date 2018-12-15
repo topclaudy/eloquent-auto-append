@@ -2,8 +2,8 @@
 
 use Illuminate\Support\ServiceProvider;
 
-class AutoAppendServiceProvider extends ServiceProvider {
-
+class AutoAppendServiceProvider extends ServiceProvider
+{
     /**
      * Bootstrap any package services.
      *

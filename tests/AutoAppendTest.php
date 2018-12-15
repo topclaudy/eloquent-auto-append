@@ -3,7 +3,7 @@
 use Awobaz\AutoAppend\Database\Eloquent\Model;
 use Awobaz\AutoAppend\Tests\Model\User;
 
-require_once __DIR__. '/TestCase.php';
+require_once __DIR__.'/TestCase.php';
 
 class AutoAppendTest extends TestCase
 {
