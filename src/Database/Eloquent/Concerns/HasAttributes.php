@@ -6,8 +6,6 @@ use Illuminate\Support\Str;
 
 trait HasAttributes
 {
-    protected $autoAppend = true;
-
     public function autoAppendAccessors(){
         foreach(static::getMutatorMethods(static::class) as $method){
             $accessor = lcfirst(static::$snakeAttributes ? Str::snake($method) : $method);
@@ -22,7 +20,7 @@ trait HasAttributes
      */
     protected function getArrayableAppends()
     {
-        if($this->autoAppend) {
+        if(!property_exists($this, 'autoAppend') || (property_exists($this, 'autoAppend') && $this->autoAppend)) {
             $this->autoAppendAccessors();
         }
 
