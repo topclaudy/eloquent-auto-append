@@ -30,7 +30,7 @@ If for some reasons you can't derive your models from `Awobaz\AutoAppend\Databas
 
 ### Disable Auto Append
 
-You may disable Auto Append on a model by setting it's property `$autoAppend` to `false` 
+You may disable **Auto Append** on a model by setting it's property `$autoAppend` to `false` 
 
 ```php
 protected $autoAppend = false;
