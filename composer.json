@@ -23,7 +23,7 @@
   "require-dev": {
     "phpunit/phpunit": "5.*",
     "laravel/laravel": "~5.4|~6.0|~7.0|~8.0|~9.0",
-    "fzaninotto/faker": "^1.8"
+    "fakerphp/faker": "^1.19"
   },
   "autoload": {
     "psr-4": {
@@ -44,5 +44,10 @@
     "awobaz/compoships": "Multi-columns relationships for Laravel 5's Eloquent",
     "awobaz/blade-active": "Blade directives for the Laravel 'Active' package",
     "awobaz/syntactic": "Syntactic sugar for named and indexed parameters call."
+  },
+  "config": {
+    "allow-plugins": {
+      "kylekatarnls/update-helper": false
+    }
   }
 }
